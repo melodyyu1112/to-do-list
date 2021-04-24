@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <!-- Latest compiled and minified CSS Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center pt-5">To-Do List</h1>
+            <div class="row" id = "todo-list">
+              <form class="mb-4" id="add-task">
+                <input class="form-control my-2 d-flex align-items-center" id = "todo-input" name="task" type="text" placeholder="To-Do" required/>
+                 <button class="btn btn-primary btn-sm"> Add To-Do</button>
+                </form>
+              <div id = "tasks">
+                <table class="table table-responsive">
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+              <div class = "row" id = "to-do-status">
+                <div class = "col-12">
+                  <input class = "all-filter" type = "checkbox" name = "all" checked = "true"/>
+                  <label for = "all">All</label> 
+                  <input class = "active-filter" name = "active" type = "checkbox"/>
+                  <label for = "active">Active</label>
+                  <input class = "complete-filter" name = "complete" type = "checkbox"/> 
+                  <label for = "complete">Complete</label>
+                </div>
+              </div>  
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

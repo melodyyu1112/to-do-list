@@ -1,0 +1,27 @@
+h1 {
+    font-family: 'Gaegu', cursive;
+}
+#todo-list {
+    margin-top: 15px;
+    margin: 20px;
+}
+ 
+#todo-input {
+    margin-bottom: 10px;
+}
+  
+  /* This will fade in the new added tasks using the animation property */
+  .todo {
+    margin-bottom: 20px;
+    opacity: 0;
+    -webkit-animation: fadeIn .5s linear forwards;
+    -moz-animation: fadeIn .5s linear forwards;
+    animation: fadeIn .5s linear forwards;
+}
+  
+  /* you need to define the fadeIn keyframe property for it to work */
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
