@@ -1,6 +1,25 @@
 h1 {
     font-family: 'Gaegu', cursive;
+    color: #1854bd;
+    font-size: 50px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
 }
+
+* {
+  color: #1854bd
+}
+
+.container {
+  border: 7px solid #1854bd;
+  border-radius: 5px;
+  border-style: dashed;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  }
+
 #todo-list {
     margin-top: 15px;
     margin: 20px;
@@ -17,6 +36,14 @@ h1 {
     -webkit-animation: fadeIn .5s linear forwards;
     -moz-animation: fadeIn .5s linear forwards;
     animation: fadeIn .5s linear forwards;
+}
+
+table {
+  width:100%
+}
+
+.remove{
+  
 }
   
   /* you need to define the fadeIn keyframe property for it to work */
